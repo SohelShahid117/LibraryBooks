@@ -1,30 +1,51 @@
-import toast, { Toaster } from "react-hot-toast";
+import { ToastContainer, toast } from 'react-toastify';
 
-export const getBlogs = () => {
-  let blogs = [];
-  let storedBlogs = localStorage.getItem("blogs");
-  if (storedBlogs) {
-    blogs = JSON.parse(storedBlogs);
+//function for stored Read Books
+
+export const getBooks = () => {
+  let books = [];
+  let storedBooks = localStorage.getItem("books");
+  if (storedBooks) {
+    books = JSON.parse(storedBooks);
   }
 
-  return blogs;
+  return books;
 };
 
-export const saveBlogs = (data) => {
-  let blogs = getBlogs();
+export const saveBooks = (data) => {
+  let books = getBooks();
 
-  const isExist = blogs.find((b) => b.id == data.id);
+  const isExist = books.find((b) => b.id == data.id);
   if (isExist) {
-    return toast.error("Already bookmarked");
+    return toast.error("Already Read");
   }
-  blogs.push(data);
-  localStorage.setItem("blogs", JSON.stringify(blogs));
-  toast.success("Blog Bookmarked successfully");
+  books.push(data);
+  localStorage.setItem("books", JSON.stringify(books));
+  toast.success("Book added successfully");
 };
 
-export const deleteBlog = (id) => {
-  let blogs = getBlogs();
-  const remainingBlg = blogs.filter((b) => b.id != id);
-  localStorage.setItem("blogs", JSON.stringify(remainingBlg));
-  toast.success("Blog removed from bookmark");
-};
+
+
+//function for stored wishlist books
+
+// export const getBooks = () => {
+//     let books = [];
+//     let storedBooks = localStorage.getItem("books");
+//     if (storedBooks) {
+//       books = JSON.parse(storedBooks);
+//     }
+  
+//     return books;
+//   };
+  
+//   export const saveBooks = (data) => {
+//     let books = getBooks();
+  
+//     const isExist = books.find((b) => b.id == data.id);
+//     if (isExist) {
+//       return toast.error("Already Read");
+//     }
+//     books.push(data);
+//     localStorage.setItem("books", JSON.stringify(books));
+//     toast.success("Book added successfully");
+//   };

@@ -1,5 +1,8 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBooks } from "../../Utility/Utility";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Book = () => {
   const data = useLoaderData();
@@ -11,6 +14,15 @@ const Book = () => {
   console.log(val);
   const { book_image, author_name, book_summary, books_category } = val;
   console.log(author_name);
+
+  const handleRead = (val) => {
+    console.log(val);
+    saveBooks(val);
+  };
+  const handleWishlist = (val) => {
+    console.log(val);
+    saveBooks(val);
+  };
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-xl">
@@ -26,8 +38,16 @@ const Book = () => {
           {/* <h2 className="card-title">{books[0].title}</h2> */}
           <p>{book_summary}</p>
           <div className="card-actions">
-            <button className="btn btn-primary">Read</button>
-            <button className="btn btn-secondary">WishList</button>
+            <button onClick={() => handleRead(val)} className="btn btn-primary">
+              Read
+            </button>
+            <button
+              onClick={() => handleWishlist(val)}
+              className="btn btn-secondary"
+            >
+              WishList
+            </button>
+            <ToastContainer />
           </div>
         </div>
       </div>

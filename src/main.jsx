@@ -5,6 +5,7 @@ import "./index.css";
 import MainLayout from "./Layout/MainLayout";
 import Hero from "./Component/Hero/Hero";
 import Book from "./Component/Book/Book";
+import ListedBooks from "./Pages/ListedBooks";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
         path: `/book/:id`,
         element: <Book></Book>,
         loader: () => fetch(`/books.json`),
+      },
+      {
+        path: "/listedBooks",
+        element: <ListedBooks></ListedBooks>,
       },
     ],
   },
