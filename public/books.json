@@ -1,7 +1,6 @@
 [
   { "id":"1",
-    
-"book_image": "alchemist.jpg",
+    "book_image": "alchemist.jpg",
     "title": "The Great Gatsby",
     "author_name": "F. Scott Fitzgerald",
     "review_quantity": 1200,
@@ -9,7 +8,9 @@
     "page_number": 180,
     "publisher_name": "Scribner",
     "year_of_publishing": 1925,
-    "books_category": "Fiction"
+    "books_category": "Fiction",
+    "rating":4.5,
+    "tags":["Suspense","Psycological"]
   },
   {"id":"2",
     "book_image": "clive.jpg",
@@ -20,7 +21,9 @@
     "page_number": 281,
     "publisher_name": "J.B. Lippincott & Co.",
     "year_of_publishing": 1960,
-    "books_category": "Fiction"
+    "books_category": "Fiction",
+    "rating":4.8,
+    "tags":["YoungAdult","Identity"]
   },
   {
     "id":"3",
@@ -32,7 +35,9 @@
     "page_number": 328,
     "publisher_name": "Secker & Warburg",
     "year_of_publishing": 1949,
-    "books_category": "Science Fiction"
+    "books_category": "Science Fiction",
+    "rating":4.7,
+    "tags":["Suspense","Psycological"]
   },
   {
     "id":"4",
@@ -44,7 +49,9 @@
     "page_number": 279,
     "publisher_name": "T. Egerton, Whitehall",
     "year_of_publishing": 1813,
-    "books_category": "Romance"
+    "books_category": "Romance",
+    "rating":4.9,
+    "tags":["YoungAdult","Identity"]
   },
   {
 
@@ -57,7 +64,9 @@
     "page_number": 224,
     "publisher_name": "Little, Brown and Company",
     "year_of_publishing": 1951,
-    "books_category": "Fiction"
+    "books_category": "Fiction",
+    "rating":4.8,
+    "tags":["Suspense","Psycological"]
   },
   {
     "id":"6",
@@ -69,7 +78,9 @@
     "page_number": 310,
     "publisher_name": "George Allen & Unwin",
     "year_of_publishing": 1937,
-    "books_category": "Fantasy"
+    "books_category": "Fantasy",
+    "rating":5,
+    "tags":["YoungAdult","Identity"]
   },
   {
     "id":"7",
@@ -81,7 +92,9 @@
     "page_number": 223,
     "publisher_name": "Bloomsbury",
     "year_of_publishing": 1997,
-    "books_category": "Fantasy"
+    "books_category": "Fantasy",
+    "rating":4.9,
+    "tags":["Suspense","Psycological"]
   },
   {
     "id":"8",
@@ -93,7 +106,9 @@
     "page_number": 634,
     "publisher_name": "Richard Bentley",
     "year_of_publishing": 1851,
-    "books_category": "Adventure"
+    "books_category": "Adventure",
+    "rating":5,
+    "tags":["YoungAdult","Identity"]
   },
   {
     "id":"9",
@@ -105,6 +120,8 @@
     "page_number": 1178,
     "publisher_name": "George Allen & Unwin",
     "year_of_publishing": 1954,
-    "books_category": "Fantasy"
+    "books_category": "Fantasy",
+    "rating":4.8,
+    "tags":["Suspense","Psycological"]
   }
 ]

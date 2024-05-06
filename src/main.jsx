@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import MainLayout from "./Layout/MainLayout";
 import Hero from "./Component/Hero/Hero";
+import Book from "./Component/Book/Book";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Hero></Hero>,
-        loader: () => fetch(`books.json`),
+        loader: () => fetch(`/books.json`),
+      },
+      {
+        path: `/book/:id`,
+        element: <Book></Book>,
+        loader: () => fetch(`/books.json`),
       },
     ],
   },

@@ -5,8 +5,7 @@ import { Link, useLoaderData } from "react-router-dom";
 const Hero = () => {
   const data = useLoaderData();
   console.log(data);
-  console.log(data[0]);
-  console.log(data[0].title);
+
   return (
     <>
       <div className="hero min-h-screen bg-base-200">
@@ -30,9 +29,6 @@ const Hero = () => {
       </div>
 
       <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {/* {data.map((blg) => (
-            <SingleCard key={blg.id} blg={blg}></SingleCard>
-          ))} */}
         {data.map((book) => (
           <Books key={book.id} book={book}></Books>
         ))}

@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 
 const Books = ({ book }) => {
   console.log(book);
+  const { id } = book;
   return (
-    <Link to="/">
+    <Link to={`/book/${id}`}>
       <div className="card w-96 bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
           <img
