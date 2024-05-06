@@ -3,12 +3,20 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import MainLayout from "./Layout/MainLayout";
+import Hero from "./Component/Hero/Hero";
 
 const router = createBrowserRouter([
   {
     path: "/",
     // element: <div>Hello world!</div>,
     element: <MainLayout></MainLayout>,
+    children: [
+      {
+        path: "/",
+        element: <Hero></Hero>,
+        loader: () => fetch(`books.json`),
+      },
+    ],
   },
 ]);
 
