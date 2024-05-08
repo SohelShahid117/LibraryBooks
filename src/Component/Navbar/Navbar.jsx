@@ -3,9 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start">
-        <Link to="/" className="btn btn-ghost text-xl">
+    <div className="navbar bg-base-100 w-[80%] mx-auto ">
+      <div className="navbar-start ">
+        <Link
+          to="/"
+          className="btn btn-ghost  text-green-600 font-extrabold text-2xl"
+        >
           Book Vibe
         </Link>
       </div>

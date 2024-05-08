@@ -37,6 +37,7 @@ const Book = () => {
         <div className="card-body items-center text-center">
           {/* <h2 className="card-title">{books[0].title}</h2> */}
           <p>{book_summary}</p>
+          <h2>{books_category}</h2>
           <div className="card-actions">
             <button onClick={() => handleRead(val)} className="btn btn-primary">
               Read
