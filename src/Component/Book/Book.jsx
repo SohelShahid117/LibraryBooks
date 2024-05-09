@@ -14,6 +14,7 @@ const Book = () => {
   console.log(val);
   const { book_image, author_name, book_summary, books_category } = val;
   console.log(author_name);
+  console.log(book_image);
 
   const handleRead = (val) => {
     console.log(val);
@@ -28,7 +29,7 @@ const Book = () => {
       <div className="card w-96 bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
           <img
-            // src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+            // src="https://ibb.co/7J3FYJr"
             src={book_image}
             alt="Shoes"
             className="rounded-xl"

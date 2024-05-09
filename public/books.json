@@ -1,6 +1,7 @@
 [
   { "id":"1",
-    "book_image": "alchemist.jpg",
+
+    "book_image": "https://i.ibb.co/3yxHryS/alchemist.jpg",
     "title": "The Great Gatsby",
     "author_name": "F. Scott Fitzgerald",
     "review_quantity": 1200,
@@ -13,7 +14,7 @@
     "tags":["Suspense","Psycological"]
   },
   {"id":"2",
-    "book_image": "clive.jpg",
+    "book_image": "https://i.ibb.co/vd7K5BL/clive.jpg",
     "title": "To Kill a Mockingbird",
     "author_name": "Harper Lee",
     "review_quantity": 1500,
@@ -27,7 +28,7 @@
   },
   {
     "id":"3",
-    "book_image": "dad.jpg",
+    "book_image": "https://i.ibb.co/J2Mx515/dad.jpg",
     "title": "1984",
     "author_name": "George Orwell",
     "review_quantity": 1100,
@@ -41,7 +42,7 @@
   },
   {
     "id":"4",
-    "book_image": "democracy.jpg",
+    "book_image": "https://i.ibb.co/F5PDFLW/democracy.jpg",
     "title": "Pride and Prejudice",
     "author_name": "Jane Austen",
     "review_quantity": 900,
@@ -56,7 +57,7 @@
   {
 
     "id":"5",
-    "book_image": "elon.jpg",
+    "book_image": "https://i.ibb.co/ThZs0xB/elon.jpg",
     "title": "The Catcher in the Rye",
     "author_name": "J.D. Salinger",
     "review_quantity": 1300,
@@ -70,7 +71,7 @@
   },
   {
     "id":"6",
-    "book_image": "fire.jpg",
+    "book_image": "https://i.ibb.co/7z8D1cj/fire.jpg",
     "title": "The Hobbit",
     "author_name": "J.R.R. Tolkien",
     "review_quantity": 1400,
@@ -84,7 +85,7 @@
   },
   {
     "id":"7",
-    "book_image": "habit.jpg",
+    "book_image": "https://i.ibb.co/gg9tp0v/habit.jpg",
     "title": "Harry Potter and the Philosopher's Stone",
     "author_name": "J.K. Rowling",
     "review_quantity": 1700,
@@ -98,7 +99,7 @@
   },
   {
     "id":"8",
-    "book_image": "read.jpg",
+    "book_image": "https://i.ibb.co/89yvt61/read.jpg",
     "title": "Moby-Dick; or, The Whale",
     "author_name": "Herman Melville",
     "review_quantity": 950,
@@ -112,7 +113,7 @@
   },
   {
     "id":"9",
-    "book_image": "silent.jpg",
+    "book_image": "https://i.ibb.co/nmst53V/silent.jpg",
     "title": "The Lord of the Rings",
     "author_name": "J.R.R. Tolkien",
     "review_quantity": 1600,

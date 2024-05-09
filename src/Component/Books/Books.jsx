@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 const Books = ({ book }) => {
   console.log(book);
-  const { id } = book;
+  const { id, book_image } = book;
   return (
     <Link to={`/book/${id}`}>
       <div className="card w-96 bg-base-100 shadow-xl">
         <figure className="px-10 pt-10">
           <img
             // src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            src={book.book_image}
+            src={book_image}
             alt="Shoes"
             className="rounded-xl"
           />
